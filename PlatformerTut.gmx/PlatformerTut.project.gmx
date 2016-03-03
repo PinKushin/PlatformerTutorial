@@ -14,8 +14,11 @@
     <sprite>sprites\sFearfull</sprite>
     <sprite>sprites\sCheckPoint</sprite>
     <sprite>sprites\sprPlatform</sprite>
+    <sprite>sprites\sPlayerWalk</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bTileset</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scrDeath.gml</script>

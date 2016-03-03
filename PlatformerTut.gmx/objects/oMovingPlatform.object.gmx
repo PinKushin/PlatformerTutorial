@@ -52,6 +52,7 @@ Hsp = 0
           <argument>
             <kind>1</kind>
             <string>Hsp = Dir * MoveSpeed
+
 //Horizontal Collision
 if place_meeting (x + Hsp, y, oWall)
 {
@@ -60,7 +61,6 @@ if place_meeting (x + Hsp, y, oWall)
         x += sign(Hsp)
     }
     Hsp = 0
-    
     Dir *= -1
 }
 x += Hsp
