@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>sprite_index = 1
+            <string>sprite_index = -1
 Dir = -1
 MoveSpeed = 250 / room_speed
 Hsp = 0
@@ -53,10 +53,11 @@ Hsp = 0
             <kind>1</kind>
             <string>Hsp = Dir * MoveSpeed
 
+
 //Horizontal Collision
 if place_meeting (x + Hsp, y, oWall)
 {
-    while !place_meeting (x + sign(Hsp), y, oWall)
+    while !place_meeting (x + sign(Hsp), y, oWall,)
     {
         x += sign(Hsp)
     }
@@ -71,18 +72,19 @@ StayInsideRoom ()
 
 if instance_exists (oPlayer)
 {
-    if round (oPlayer.y + (oPlayer.sprite_height / 2)) &gt; y || (oPlayer.KeyDown) 
+    if round (oPlayer.y + (oPlayer.sprite_height/2)) &gt; y || (oPlayer.KeyDown) 
     {
         mask_index = -1
     }
     else 
     {
-        mask_index = sprPlatform
         if place_meeting (x, y - 1, oPlayer)
         {
             oPlayer.HspCarry = Hsp
         }
+        
     }
+    mask_index = 1
 }
 </string>
           </argument>
