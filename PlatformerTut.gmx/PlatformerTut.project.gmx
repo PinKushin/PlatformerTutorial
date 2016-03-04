@@ -7,7 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sPlayer</sprite>
-    <sprite>sprites\sPlayerB</sprite>
     <sprite>sprites\sWall</sprite>
     <sprite>sprites\sPowerUp</sprite>
     <sprite>sprites\sEnemy</sprite>
@@ -15,6 +14,10 @@
     <sprite>sprites\sCheckPoint</sprite>
     <sprite>sprites\sprPlatform</sprite>
     <sprite>sprites\sPlayerWalk</sprite>
+    <sprite>sprites\sPlayerJump</sprite>
+    <sprite>sprites\sPlayerFall</sprite>
+    <sprite>sprites\sPlayerIdle</sprite>
+    <sprite>sprites\sPlayerB</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bTileset</background>

@@ -60,8 +60,9 @@ if place_meeting (x + Hsp, y, oWall)
     {
         x += sign(Hsp)
     }
-    Hsp = 0
+    
     Dir *= -1
+    Hsp = 0
 }
 x += Hsp
 

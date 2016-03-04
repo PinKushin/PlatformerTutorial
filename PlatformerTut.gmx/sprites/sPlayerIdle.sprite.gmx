@@ -20,9 +20,9 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\sPlayerB_0.png</frame>
-    <frame index="1">images\sPlayerB_1.png</frame>
-    <frame index="2">images\sPlayerB_2.png</frame>
-    <frame index="3">images\sPlayerB_3.png</frame>
+    <frame index="0">images\sPlayerIdle_0.png</frame>
+    <frame index="1">images\sPlayerIdle_1.png</frame>
+    <frame index="2">images\sPlayerIdle_2.png</frame>
+    <frame index="3">images\sPlayerIdle_3.png</frame>
   </frames>
 </sprite>
