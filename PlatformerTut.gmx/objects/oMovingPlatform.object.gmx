@@ -83,9 +83,9 @@ if instance_exists (oPlayer)
             
             oPlayer.HspCarry = Hsp
         }
-        
+       
     }
-    mask_index = 1
+    mask_index = sprPlatform
 }
 </string>
           </argument>

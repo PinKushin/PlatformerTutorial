@@ -149,7 +149,7 @@ if (KeyJump) &amp;&amp; (place_meeting (x + 1, y, oWall) || place_meeting (x - 1
     Vsp = -JumpSpeed
 }
     
-var HspFinal = Hsp + HspCarry
+var HspFinal = Hsp + HspCarry;
 HspCarry = 0
 //Horizontal Collision
 if place_meeting (x + HspFinal, y, oWall)
