@@ -51,8 +51,9 @@ Hsp = 0
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Hsp = Dir * MoveSpeed
+            <string>mask_index = sprPlatform
 
+Hsp = Dir * MoveSpeed
 
 //Horizontal Collision
 if place_meeting (x + Hsp, y, oWall)
@@ -61,14 +62,10 @@ if place_meeting (x + Hsp, y, oWall)
     {
         x += sign(Hsp)
     }
-    
-    Dir *= -1
     Hsp = 0
+    Dir *= -1 
 }
 x += Hsp
-
-StayInsideRoom ()
-
 
 if instance_exists (oPlayer)
 {
@@ -78,15 +75,14 @@ if instance_exists (oPlayer)
     }
     else 
     {
+        mask_index = sprPlatform
         if place_meeting (x, y - 1, oPlayer)
         {
-            
             oPlayer.HspCarry = Hsp
         }
-       
     }
-    mask_index = sprPlatform
 }
+StayInsideRoom ()
 </string>
           </argument>
         </arguments>
